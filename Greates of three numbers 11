@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class GreatestNumber {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Input three integers
+
+        int a = sc.nextInt();
+
+        int b = sc.nextInt();
+
+        int c = sc.nextInt();
+
+        // Find the maximum
+
+        int max = Math.max(a, Math.max(b, c));
+
+        // Check if there is a tie for the greatest number
+
+        int count = 0;
+
+        if (a == max) count++;
+
+        if (b == max) count++;
+
+        if (c == max) count++;
+
+        if (count > 1) {
+
+            System.out.println("There is a tie for the greatest number");
+
+        } else {
+
+            System.out.println(max + " is the greatest");
+
+        }
+
+        sc.close();
+
+    }
+
+}
