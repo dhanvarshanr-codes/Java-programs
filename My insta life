@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next();
+        int follow = sc.nextInt();
+        int posts = sc.nextInt();
+        float hours= sc.nextFloat();
+        System.out.printf("My name is %s, my Instagram has %d followers, I have posted %d posts, and I use Instagram for %.1f hours daily.", name, follow, posts, hours);
+    }
+}
